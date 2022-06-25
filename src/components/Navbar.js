@@ -28,7 +28,7 @@ const Navbar = () => {
           <div class="flex-none block">
             <ul class="menu menu-horizontal">
               <li>
-                <a>  </a>
+                <a> <button className="btn btn-primary" >jhh</button> </a>
               </li>
               <li tabindex="0">
                 <a>
