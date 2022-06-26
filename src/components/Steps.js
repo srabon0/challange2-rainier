@@ -13,7 +13,7 @@ const Steps = () => {
                     <span className='mx-2'>
                         <h1 className='text-gray-900'>Dr Muhammad Abdul Hossain</h1>
                         <p>Cardiologist</p>
-                        <p  className='text-xs mt-1'><span className='bg-base-100 p-1 mr-10'>Slot : Morning</span> <span className='bg-base-100 p-1 ml-5'>Time : 10.00 AM</span></p>
+                        <p  className='text-xs mt-1'><span className='bg-base-100 p-1 mr-6'>Slot : Morning</span> <span className='bg-base-100 p-1 ml-5'>Time : 10.00 AM</span></p>
                     </span>
 
                 </div>
@@ -26,7 +26,7 @@ const Steps = () => {
                     <span className='mx-2'>
                         <h1 className='text-gray-900'>Dr Muhammad Abdul Hossain</h1>
                         <p>Cardiologist</p>
-                        <p  className='text-xs mt-1'><span className='bg-base-100 p-1 mr-10'>Slot : Morning</span> <span className='bg-base-100 p-1 ml-5'>Time : 10.00 AM</span></p>
+                        <p  className='text-xs mt-1'><span className='bg-base-100 p-1 mr-6'>Slot : Morning</span> <span className='bg-base-100 p-1 ml-5'>Time : 10.00 AM</span></p>
                     </span>
 
                 </div>
@@ -39,7 +39,7 @@ const Steps = () => {
                     <span className='mx-2'>
                         <h1 className='text-gray-900'>Dr Muhammad Abdul Hossain</h1>
                         <p>Cardiologist</p>
-                        <p  className='text-xs mt-1'><span className='bg-base-100 p-1 mr-10'>Slot : Morning</span> <span className='bg-base-100 p-1 ml-5'>Time : 10.00 AM</span></p>
+                        <p  className='text-xs mt-1'><span className='bg-base-100 p-1 mr-6'>Slot : Morning</span> <span className='bg-base-100 p-1 ml-5'>Time : 10.00 AM</span></p>
                     </span>
 
                 </div>
@@ -52,7 +52,7 @@ const Steps = () => {
                     <span className='mx-2'>
                         <h1 className='text-gray-900'>Dr Muhammad Abdul Hossain</h1>
                         <p>Cardiologist</p>
-                        <p  className='text-xs mt-1'><span className='bg-base-100 p-1 mr-10'>Slot : Morning</span> <span className='bg-base-100 p-1 ml-5'>Time : 10.00 AM</span></p>
+                        <p  className='text-xs mt-1'><span className='bg-base-100 p-1 mr-6'>Slot : Morning</span> <span className='bg-base-100 p-1 ml-5'>Time : 10.00 AM</span></p>
                     </span>
 
                 </div>
