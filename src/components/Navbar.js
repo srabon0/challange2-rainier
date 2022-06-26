@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { Children, useState } from "react";
 import { IoIosArrowBack, IoIosMenu } from "react-icons/io";
 import logo from "../assets/images/logo.svg";
-const Navbar = () => {
+import Header from "./Header";
+const Navbar = ({children}) => {
   const [open, setOpen] = useState(true);
   return (
     <div className="flex">
@@ -314,8 +315,12 @@ const Navbar = () => {
         ></IoIosArrowBack>
       </div>
 
-      <div className="p-7">
-        <h1 className="text-2xl font-semibold">HomePage</h1>
+      <div className="p-7 w-full">
+      <Header></Header>
+        <div className="container">
+
+          {children}
+        </div>
       </div>
     </div>
   );
