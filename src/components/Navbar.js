@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { IoIosArrowBack, IoIosMenu } from "react-icons/io";
-import { FiHome, FiUser } from "react-icons/fi";
-import { BiCalendar } from "react-icons/bi";
 import logo from "../assets/images/logo.svg";
 const Navbar = () => {
   const [open, setOpen] = useState(true);
@@ -28,12 +26,12 @@ const Navbar = () => {
 
         <div className="mt-24 mx-auto">
           <ul
-            class={`flex flex-col gap-6 transition-all duration-300 bg-base-100 ${
+            class={`flex flex-col gap-6 duration-300 bg-base-100 ${
               open ? "w-56" : "w-16"
             } p-2 `}
           >
             <li>
-              <a>
+             <a className="flex flex-nowrap">
                 <svg
                   width="25"
                   height="25"
@@ -47,11 +45,11 @@ const Navbar = () => {
                   />
                 </svg>
 
-                <span className={`${open ? "block" : "hidden"}`}> hello</span>
+                <span className={`mx-3 text-lg font-semibold ${open ? "block" : "hidden"}`}> Home</span>
               </a>
             </li>
             <li>
-              <a>
+             <a className="flex flex-nowrap">
                 <svg
                   width="25"
                   height="25"
@@ -73,11 +71,11 @@ const Navbar = () => {
                   />
                 </svg>
 
-                <span className={`${open ? "block" : "hidden"}`}> hello</span>
+                <span className={`mx-3 text-lg font-semibold ${open ? "block" : "hidden"}`}> Patient Profile</span>
               </a>
             </li>
             <li>
-              <a>
+             <a className="flex flex-nowrap">
                 <svg
                   width="25"
                   height="25"
@@ -143,11 +141,11 @@ const Navbar = () => {
                   />
                 </svg>
 
-                <span className={`${open ? "block" : "hidden"}`}> hello</span>
+                <span className={`mx-3 text-lg font-semibold ${open ? "block" : "hidden"}`}> Appointments </span>
               </a>
             </li>
             <li>
-              <a>
+             <a className="flex flex-nowrap">
                 <svg
                   width="25"
                   height="25"
@@ -161,11 +159,11 @@ const Navbar = () => {
                   />
                 </svg>
 
-                <span className={`${open ? "block" : "hidden"}`}> hello</span>
+                <span className={`mx-3 text-lg font-semibold ${open ? "block" : "hidden"}`}>Medical History </span>
               </a>
             </li>
             <li>
-              <a>
+             <a className="flex flex-nowrap">
                 <svg
                   width="25"
                   height="25"
@@ -184,128 +182,128 @@ const Navbar = () => {
                   />
                 </svg>
 
-                <span className={`${open ? "block" : "hidden"}`}> hello</span>
+                <span className={`mx-3 text-lg font-semibold ${open ? "block" : "hidden"}`}> Settings</span>
               </a>
             </li>
             <li className="mt-24">
-              <a>
-                <svg
-                  width="36"
-                  height="36"
-                  viewBox="0 0 57 57"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g filter="url(#filter0_d_2_10333)">
+            {
+              open ? <button className="btn btn-primary btn-md text-sm">New  Appointment </button>: <a>
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 57 57"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_d_2_10333)">
+                  <rect
+                    x="2"
+                    y="1"
+                    width="53"
+                    height="53"
+                    rx="26.5"
+                    fill="url(#paint0_linear_2_10333)"
+                  />
+                  <g filter="url(#filter1_b_2_10333)">
                     <rect
-                      x="2"
-                      y="1"
-                      width="53"
-                      height="53"
-                      rx="26.5"
-                      fill="url(#paint0_linear_2_10333)"
+                      x="13"
+                      y="12"
+                      width="31"
+                      height="31"
+                      rx="15.5"
+                      fill="url(#paint1_radial_2_10333)"
                     />
-                    <g filter="url(#filter1_b_2_10333)">
-                      <rect
-                        x="13"
-                        y="12"
-                        width="31"
-                        height="31"
-                        rx="15.5"
-                        fill="url(#paint1_radial_2_10333)"
-                      />
-                      <path
-                        d="M28.625 27.375V23H27.375V27.375H23V28.625H27.375V33H28.625V28.625H33V27.375H28.625Z"
-                        fill="white"
-                      />
-                    </g>
+                    <path
+                      d="M28.625 27.375V23H27.375V27.375H23V28.625H27.375V33H28.625V28.625H33V27.375H28.625Z"
+                      fill="white"
+                    />
                   </g>
-                  <defs>
-                    <filter
-                      id="filter0_d_2_10333"
-                      x="0"
-                      y="0"
-                      width="57"
-                      height="57"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feColorMatrix
-                        in="SourceAlpha"
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        result="hardAlpha"
-                      />
-                      <feOffset dy="1" />
-                      <feGaussianBlur stdDeviation="1" />
-                      <feComposite in2="hardAlpha" operator="out" />
-                      <feColorMatrix
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in2="BackgroundImageFix"
-                        result="effect1_dropShadow_2_10333"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_dropShadow_2_10333"
-                        result="shape"
-                      />
-                    </filter>
-                    <filter
-                      id="filter1_b_2_10333"
-                      x="-7"
-                      y="-8"
-                      width="71"
-                      height="71"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feGaussianBlur in="BackgroundImage" stdDeviation="10" />
-                      <feComposite
-                        in2="SourceAlpha"
-                        operator="in"
-                        result="effect1_backgroundBlur_2_10333"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_backgroundBlur_2_10333"
-                        result="shape"
-                      />
-                    </filter>
-                    <linearGradient
-                      id="paint0_linear_2_10333"
-                      x1="10.4238"
-                      y1="-63.4432"
-                      x2="81.3675"
-                      y2="-49.3123"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop offset="0.00315941" stop-color="#FF7594" />
-                      <stop offset="0.942708" stop-color="#FF7C65" />
-                    </linearGradient>
-                    <radialGradient
-                      id="paint1_radial_2_10333"
-                      cx="0"
-                      cy="0"
-                      r="1"
-                      gradientUnits="userSpaceOnUse"
-                      gradientTransform="translate(13.8809 13.8926) rotate(41.245) scale(27.5691 59.2288)"
-                    >
-                      <stop stop-color="white" stop-opacity="0.28" />
-                      <stop offset="1" stop-color="white" stop-opacity="0.28" />
-                    </radialGradient>
-                  </defs>
-                </svg>
-
-                <span className={`${open ? "block" : "hidden"}`}> hello</span>
-              </a>
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_2_10333"
+                    x="0"
+                    y="0"
+                    width="57"
+                    height="57"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="1" />
+                    <feGaussianBlur stdDeviation="1" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_2_10333"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_2_10333"
+                      result="shape"
+                    />
+                  </filter>
+                  <filter
+                    id="filter1_b_2_10333"
+                    x="-7"
+                    y="-8"
+                    width="71"
+                    height="71"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur in="BackgroundImage" stdDeviation="10" />
+                    <feComposite
+                      in2="SourceAlpha"
+                      operator="in"
+                      result="effect1_backgroundBlur_2_10333"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_backgroundBlur_2_10333"
+                      result="shape"
+                    />
+                  </filter>
+                  <linearGradient
+                    id="paint0_linear_2_10333"
+                    x1="10.4238"
+                    y1="-63.4432"
+                    x2="81.3675"
+                    y2="-49.3123"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0.00315941" stop-color="#FF7594" />
+                    <stop offset="0.942708" stop-color="#FF7C65" />
+                  </linearGradient>
+                  <radialGradient
+                    id="paint1_radial_2_10333"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(13.8809 13.8926) rotate(41.245) scale(27.5691 59.2288)"
+                  >
+                    <stop stop-color="white" stop-opacity="0.28" />
+                    <stop offset="1" stop-color="white" stop-opacity="0.28" />
+                  </radialGradient>
+                </defs>
+              </svg>
+            </a>
+            }
             </li>
           </ul>
         </div>
