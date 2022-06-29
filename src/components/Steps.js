@@ -2,8 +2,8 @@ import React from 'react';
 
 const Steps = () => {
     return (
-        <div>
-            <p className='m3 text-xl'>Upcoming Events</p>
+        <div className='border shadow-lg mb-10'>
+            <p className='m-3 text-xl'>Upcoming Events</p>
             <div className='card-body'>
                 <div className='w-76 bg-base-200 flex rounded-sm mb-3 '>
                     <span className='bg-gray-100 w-16 text-center rounded-lg px-1'>

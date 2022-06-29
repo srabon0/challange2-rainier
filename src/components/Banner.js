@@ -1,4 +1,5 @@
 import React from "react";
+import Hug from "./Hug";
 import NameDashBoard from "./NameDashBoard";
 import StatusCard from "./StatusCard";
 import Steps from "./Steps";
@@ -9,10 +10,13 @@ const Banner = () => {
       <div>
         <NameDashBoard></NameDashBoard>
         <StatusCard></StatusCard>
+        <NameDashBoard></NameDashBoard>
+        <StatusCard></StatusCard>
         
       </div>
-      <div>
+      <div className="lg:block hidden">
         <Steps></Steps>
+        <Hug></Hug>
 
       </div>
 
