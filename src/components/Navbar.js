@@ -1,14 +1,14 @@
-import React, { Children, useState } from "react";
+import React, {useState } from "react";
 import { IoIosArrowBack, IoIosMenu } from "react-icons/io";
 import logo from "../assets/images/logo.svg";
 import Header from "./Header";
 const Navbar = ({children}) => {
   const [open, setOpen] = useState(true);
   return (
-    <div className="flex">
+    <div className="flex h-full">
       <div
-        className={`bg-base-100 shadow-sm h-screen p-5 pt-8 relative duration-300 ${
-          open ? "w-64" : "w-24"
+        className={`z-20 bg-base-100 shadow-sm  p-5 pt-8  duration-300 ${
+          open ? "w-64 absolute" : "w-24 relative"
         } cursor-pointer`}
       >
         {open ? (

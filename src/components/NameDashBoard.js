@@ -3,11 +3,11 @@ import React from "react";
 const NameDashBoard = () => {
   return (
     <>
-      <div class="mx-2 lg:col-span-3 md:col-span-4  rounded-md bg-gradient-to-r from-primary via-secondary to-accent  text-primary-content order-1">
-        <div class="flex p-1 justify-evenly items-center">
+      <div class="mx-2 lg:w-[718px] lg:h-[213px] md:col-span-4 px-2 rounded-md bg-gradient-to-r from-primary via-secondary to-accent  text-primary-content order-1">
+        <div class="flex justify-evenly items-center">
           <div>
             <svg
-              className="lg:h-84 md:h-72 md:w-72 lg:w-84"
+              className="lg:h-[230px] lg:w-[230px]"
               viewBox="0 0 230 230"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -699,13 +699,13 @@ const NameDashBoard = () => {
             </svg>
           </div>
           <div className="space-y-3">
-            <h1 className="lg:text-5xl font-semibold text-white">
+            <h1 className="lg:text-2xl font-semibold text-white">
               Hello, Mary Jane
             </h1>
-            <h4 className="lg:text-xl font-semibold text-white ">
+            <h4 className="lg:text-md font-semibold text-white ">
               Stay-up To date with your appointmens
             </h4>
-            <h4 className="lg:text-xl font-semibold text-white">
+            <h4 className="lg:text-md font-semibold text-white">
               {" "}
               You Have No pending Reports.{" "}
             </h4>
