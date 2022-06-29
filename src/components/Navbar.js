@@ -8,7 +8,7 @@ const Navbar = ({children}) => {
     <div className="flex h-full">
       <div
         className={`z-20 bg-base-100 shadow-sm  p-5 pt-8  duration-300 ${
-          open ? "w-64 absolute" : "w-24 relative"
+          open ? "w-64 h-[995px] absolute" : "w-24 relative"
         } cursor-pointer`}
       >
         {open ? (
