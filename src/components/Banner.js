@@ -3,6 +3,7 @@ import Hug from "./Hug";
 import NameDashBoard from "./NameDashBoard";
 import StatusCard from "./StatusCard";
 import Steps from "./Steps";
+import Todolist from "./Todolist";
 
 const Banner = () => {
   return (
@@ -10,8 +11,7 @@ const Banner = () => {
       <div>
         <NameDashBoard></NameDashBoard>
         <StatusCard></StatusCard>
-        <NameDashBoard></NameDashBoard>
-        <StatusCard></StatusCard>
+        <Todolist></Todolist>
         
       </div>
       <div className="lg:block hidden">
