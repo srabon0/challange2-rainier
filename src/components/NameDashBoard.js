@@ -4,7 +4,7 @@ const NameDashBoard = () => {
   return (
     <>
       <div class="mx-2 lg:w-[718px] lg:h-[213px] md:col-span-4 px-2 rounded-md bg-gradient-to-r from-primary via-secondary to-accent  text-primary-content order-1">
-        <div class="flex justify-evenly items-center">
+        <div class="flex md:justify-evenly md:items-center md:flex-row flex-col">
           <div>
             <svg
               className="lg:h-[230px] md:w-[150px] md:h-[150px] lg:w-[230px]"

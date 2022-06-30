@@ -188,7 +188,7 @@ const stats = [
 
 const StatusCard = () => {
   return (
-    <div className="flex gap-x-7 my-4 mx-2 px-2">
+    <div className="grid md:grid-cols-4 grid-cols-2 sm:gap-x-3 md:gap-x-7 my-4 mx-2 px-2 sm:px-1">
       {stats.map((single) => (
         <SingleStatusCard key={single.id} single={single}></SingleStatusCard>
       ))}
@@ -201,7 +201,7 @@ export default StatusCard;
 const SingleStatusCard = ({ single }) => {
   const { id, name, unit, status, img, text } = single;
   return (
-    <div class="w-[155px] h-[158px] p-2 space-y-2  bg-base-100 shadow-lg rounded-lg border text-primary-content">
+    <div class="w-[160px] h-[158px] p-4 space-y-2  bg-base-100 shadow-lg rounded-lg border text-primary-content">
       {img}
       <h2 className="text-sm font-bold">{name}</h2>
       <h2 className="text-xl font-medium">{unit}</h2>

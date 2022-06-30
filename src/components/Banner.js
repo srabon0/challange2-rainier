@@ -10,14 +10,14 @@ const Banner = () => {
     <div className="lg:flex lg:justify-between relative">
       <div>
         <NameDashBoard></NameDashBoard>
-        <StatusCard></StatusCard>
+      <StatusCard></StatusCard>
         <div className="lg:block hidden">
         <Todolist></Todolist>
 
         </div>
         <div className="md:flex md:flex-row lg:hidden md:block" >
         <Todolist></Todolist>
-       < >  <Steps></Steps> </>
+        <Steps></Steps> 
         </div>
         <div className="lg:hidden md:block">
         <Hug></Hug>

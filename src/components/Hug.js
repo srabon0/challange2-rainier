@@ -3470,10 +3470,17 @@ const Hug = () => {
               />
             </svg>
           </div>
-          <div className="space-y-5 bg-gradient-to-r from-primary via-secondary to-accent p-5 rounded-lg">
+          <div className="md:flex md:items-center space-y-5 bg-gradient-to-r from-primary via-secondary to-accent p-5 rounded-lg">
+            <div className="md:flex md:flex-col md:items-center md:justify-between">
             <h1 className="text-center text-lg text-white">Infection Number <br /> <span className="text-5xl">500</span></h1>
             <h1 className="text-center text-lg text-white">Infection Rate <br /> <span className="text-5xl">10%</span></h1>
-          </div>
+            </div>
+            <div className="md:flex md:flex-col md:items-center md:justify-between lg:hidden block">
+            <h1 className="text-center text-lg text-white">Total Infection <br /> <span className="text-5xl">500,000</span></h1>
+            <h1 className="text-center text-lg text-white">Total Deathc <br /> <span className="text-5xl">20</span></h1>
+          
+            </div>
+            </div>
         </div>
       </div>
     </>

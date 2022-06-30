@@ -3,11 +3,11 @@ import { IoIosArrowBack, IoIosMenu } from "react-icons/io";
 import logo from "../assets/images/logo.svg";
 import Header from "./Header";
 const Navbar = ({children}) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <div className="flex h-full">
       <div
-        className={`z-20 bg-base-100 shadow-sm  p-5 pt-8  duration-300 ${
+        className={`md:block hidden z-20 bg-base-100 shadow-sm  p-5 pt-8  duration-300 ${
           open ? "w-64 h-[995px] absolute" : "w-24 relative"
         } cursor-pointer`}
       >
