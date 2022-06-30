@@ -3,7 +3,7 @@ import { BiCheck } from "react-icons/bi";
 const Todolist = () => {
   return (
     <>
-      <div class="mx-2 lg:w-[718px] lg:h-[445px] md:col-span-4 px-2 rounded-md bg-base-100 border shadow-lg  text-primary-content order-1">
+      <div class="mx-2 md:w-[358px] lg:w-[718px] lg:h-[445px] md:col-span-4 px-2 rounded-md bg-base-100 border shadow-lg  text-primary-content order-1">
         <div className="m-4 flex">
           <textarea
             className="border-2 rounded-md"

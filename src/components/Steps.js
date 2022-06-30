@@ -2,7 +2,7 @@ import React from 'react';
 
 const Steps = () => {
     return (
-        <div className='border shadow-lg mb-10'>
+        <div className='w-full border shadow-lg mb-10 order-2'>
             <p className='m-3 text-xl'>Upcoming Events</p>
             <div className='card-body'>
                 <div className='w-76 bg-base-200 flex rounded-sm mb-3 '>

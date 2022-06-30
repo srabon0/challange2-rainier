@@ -20,7 +20,7 @@ const Navbar = ({children}) => {
           </div>
         ) : (
           <IoIosMenu
-            className="text-primary bg-gray-100 text-4xl shadow-lg rounded font-semibold text-2xl"
+            className="text-primary bg-gray-100 text-4xl shadow-lg rounded font-semibold"
             onClick={() => setOpen(true)}
           ></IoIosMenu>
         )}

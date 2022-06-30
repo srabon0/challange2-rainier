@@ -11,7 +11,18 @@ const Banner = () => {
       <div>
         <NameDashBoard></NameDashBoard>
         <StatusCard></StatusCard>
+        <div className="lg:block hidden">
         <Todolist></Todolist>
+
+        </div>
+        <div className="md:flex md:flex-row lg:hidden md:block" >
+        <Todolist></Todolist>
+       < >  <Steps></Steps> </>
+        </div>
+        <div className="lg:hidden md:block">
+        <Hug></Hug>
+        </div>
+       
         
       </div>
       <div className="lg:block hidden">

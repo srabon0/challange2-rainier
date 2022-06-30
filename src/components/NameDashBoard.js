@@ -7,7 +7,7 @@ const NameDashBoard = () => {
         <div class="flex justify-evenly items-center">
           <div>
             <svg
-              className="lg:h-[230px] lg:w-[230px]"
+              className="lg:h-[230px] md:w-[150px] md:h-[150px] lg:w-[230px]"
               viewBox="0 0 230 230"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -699,13 +699,13 @@ const NameDashBoard = () => {
             </svg>
           </div>
           <div className="space-y-3">
-            <h1 className="lg:text-2xl font-semibold text-white">
+            <h1 className="text-2xl font-semibold text-white">
               Hello, Mary Jane
             </h1>
-            <h4 className="lg:text-md font-semibold text-white ">
+            <h4 className="text-md font-semibold text-white ">
               Stay-up To date with your appointmens
             </h4>
-            <h4 className="lg:text-md font-semibold text-white">
+            <h4 className="text-md font-semibold text-white">
               {" "}
               You Have No pending Reports.{" "}
             </h4>
