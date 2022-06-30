@@ -5,7 +5,7 @@ const Hug = () => {
     <>
       <div class="mx-2 lg:w-[450px] lg:h-[300px] md:col-span-4 px-2 rounded-md  bg-base-100 shadow-lg border text-primary-content order-1">
         <h1 className="flex flex-row justify-between m-2"> <span>Covid-19 updates</span> <span>10 September 2022 <br /> <span className="text-gray-400">Thursday  10.00.00 AM </span> </span> </h1>
-        <div class="flex justify-evenly items-center mt-2">
+        <div class="flex flex-col md:flex-row justify-evenly items-center mt-2">
           <div>
             <svg
               width="228"

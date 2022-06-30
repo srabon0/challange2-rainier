@@ -3,7 +3,7 @@ import React from "react";
 const NameDashBoard = () => {
   return (
     <>
-      <div class="mx-2 lg:w-[718px] lg:h-[213px] md:col-span-4 px-2 rounded-md bg-gradient-to-r from-primary via-secondary to-accent  text-primary-content order-1">
+      <div class="pb-10 md:pb-2 w-full p-0 mx-auto md:mx-2 lg:w-[718px] lg:h-[213px] md:col-span-4 px-2 rounded-md bg-gradient-to-r from-primary via-secondary to-accent  text-primary-content order-1">
         <div class="flex md:justify-evenly md:items-center md:flex-row flex-col">
           <div>
             <svg

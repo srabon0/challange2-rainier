@@ -8,7 +8,7 @@ import Todolist from "./Todolist";
 const Banner = () => {
   return (
     <div className="lg:flex lg:justify-between relative">
-      <div>
+      <div className="">
         <NameDashBoard></NameDashBoard>
       <StatusCard></StatusCard>
         <div className="lg:block hidden">

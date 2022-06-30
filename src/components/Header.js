@@ -3,13 +3,15 @@ import { IoIosMenu } from "react-icons/io";
 
 const Header = ({setOpen,open}) => {
   return (
-    <div class="-mt-4 navbar bg-base-100 px-10">
+    <div class="-mt-4 navbar md:bg-gradient-to-r md:from-base-100 md:via-base-100 md:to-base-100 bg-gradient-to-r from-primary via-secondary to-accent px-2 relative">
       <div class="flex-1">
+      <span className="block md:hidden">
       <IoIosMenu
-            className="text-primary bg-gray-100 text-4xl shadow-lg rounded font-semibold"
+            className="text-primary bg-gray-100 text-4xl absolute left-1 top-10 shadow-lg rounded font-semibold"
             onClick={() => setOpen(!open)}
           ></IoIosMenu>
-        <a class="btn btn-ghost normal-case text-xl">Home</a>
+      </span>
+        <a class="btn btn-ghost text-xl m-6">Home</a>
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal px-5">
@@ -221,7 +223,7 @@ const Header = ({setOpen,open}) => {
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
             </a>
-            <ul class="p-2 bg-base-100">
+            <ul class="z-10 p-2 bg-base-100">
               <li>
                 <a>Profile</a>
               </li>

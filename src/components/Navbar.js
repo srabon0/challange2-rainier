@@ -12,7 +12,7 @@ const Navbar = ({children}) => {
         } cursor-pointer`}
       >
         {open ? (
-          <div className="w-10 sm:hidden flex justify-between items-center">
+          <div className="w-10 flex justify-between items-center">
             <img src={logo} width={50} height={50} alt="" />
             <h1 className="text-3xl mx-2 font-semibold">
               Medi<span className="text-primary">Doc</span>.{" "}
@@ -315,7 +315,7 @@ const Navbar = ({children}) => {
         ></IoIosArrowBack>
       </div>
 
-      <div className="p-7 w-full">
+      <div className="p-0 md:p-7 w-full">
       <Header open={open} setOpen={setOpen}></Header>
         <div className="container">
 
