@@ -1,9 +1,14 @@
 import React from "react";
+import { IoIosMenu } from "react-icons/io";
 
-const Header = () => {
+const Header = ({setOpen,open}) => {
   return (
     <div class="-mt-4 navbar bg-base-100 px-10">
       <div class="flex-1">
+      <IoIosMenu
+            className="text-primary bg-gray-100 text-4xl shadow-lg rounded font-semibold"
+            onClick={() => setOpen(!open)}
+          ></IoIosMenu>
         <a class="btn btn-ghost normal-case text-xl">Home</a>
       </div>
       <div class="flex-none">

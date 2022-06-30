@@ -7,12 +7,12 @@ const Navbar = ({children}) => {
   return (
     <div className="flex h-full">
       <div
-        className={`md:block hidden z-20 bg-base-100 shadow-sm  p-5 pt-8  duration-300 ${
-          open ? "w-64 h-[995px] absolute" : "w-24 relative"
+        className={`z-20 bg-base-100 shadow-sm  p-5 pt-8  duration-300 ${
+          open ? "w-64 h-[995px] absolute" : "w-24 md:block hidden relative"
         } cursor-pointer`}
       >
         {open ? (
-          <div className="w-10 flex justify-between items-center">
+          <div className="w-10 sm:hidden flex justify-between items-center">
             <img src={logo} width={50} height={50} alt="" />
             <h1 className="text-3xl mx-2 font-semibold">
               Medi<span className="text-primary">Doc</span>.{" "}
@@ -316,7 +316,7 @@ const Navbar = ({children}) => {
       </div>
 
       <div className="p-7 w-full">
-      <Header></Header>
+      <Header open={open} setOpen={setOpen}></Header>
         <div className="container">
 
           {children}
