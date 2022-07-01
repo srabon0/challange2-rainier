@@ -6,6 +6,8 @@ import Steps from "./Steps";
 import Todolist from "./Todolist";
 
 const Banner = () => {
+  const root = window.document.documentElement
+  root.setAttribute("data-theme","light");
   return (
     <div className="lg:flex lg:justify-between relative">
       <div className="">

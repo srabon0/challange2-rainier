@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 
 const Header = ({setOpen,open}) => {
+  
+    const darkMode = ()=>{
+      const root = window.document.documentElement
+      const currentTheme = window.document.documentElement.getAttribute("data-theme")
+      if(currentTheme ==="light"){
+        root.setAttribute('data-theme',"coffee");
+      }else if(currentTheme ==='coffee') {
+        root.setAttribute('data-theme', 'light')
+      }
+    }
   return (
     <div class="-mt-4 navbar md:bg-gradient-to-r md:from-base-100 md:via-base-100 md:to-base-100 bg-gradient-to-r from-primary via-secondary to-accent px-2 relative">
       <div class="flex-1">
@@ -51,7 +61,8 @@ const Header = ({setOpen,open}) => {
                     type="checkbox"
                     class="toggle toggle-md toggle-accent"
                     id="dark-mode"
-                    checked
+                    onChange={()=>darkMode()}
+                    
                   />
                   <span class="label-text">
                     <svg
