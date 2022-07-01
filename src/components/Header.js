@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { IoIosMenu } from "react-icons/io";
 
 const Header = ({setOpen,open}) => {
@@ -21,7 +21,7 @@ const Header = ({setOpen,open}) => {
             onClick={() => setOpen(!open)}
           ></IoIosMenu>
       </span>
-        <a class="btn btn-ghost text-xl m-6">Home</a>
+        <a class="btn btn-ghost text-xl m-6  ">Home</a>
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal px-5">
